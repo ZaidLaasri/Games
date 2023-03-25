@@ -1,0 +1,37 @@
+<html lang="fr">
+  <head>
+    <title>Catacat</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+
+  <body>
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+          <!-- Onglets Titres -->
+          <h2 class="active"> <a href="#">Se connecter </a>  </h2>
+          <h2 class="inactive underlineHover"> <a href="#">S'inscrire </a> </h2>
+      
+          <!-- Logo -->
+          <div class="fadeIn first">
+            <img src="/assets/logo.jpeg" id="icon" alt="User Icon" />
+          </div>
+      
+          <!-- Formulaire de connexion -->
+          <form>
+            <input type="text" id="id" class="fadeIn second" name="login" placeholder="Identifiant">
+            <input type="password" id="mdp" class="fadeIn third" name="login" placeholder="Mot de passe">
+           <input type="submit" class="fadeIn fourth" value="Se connecter">
+          </form>
+          <a href="acceuil/acceuil.html"><input type="submit" class="fadeIn fourth"  value="Mode invité"></a>
+
+          <!-- Mot de passe oublié -->
+          <div id="formFooter">
+            <a class="underlineHover">Mot de passe oublié ?</a>
+          </div>
+      
+        </div>
+      </div>
+  </body>
+</html>

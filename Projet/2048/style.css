@@ -1,0 +1,329 @@
+html {
+  background-color: #ed9256;
+}
+
+body {
+
+  font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column; 
+  justify-content: center;
+  height: 700px;
+  width: 700px;
+  background: #fff;
+
+  border-radius: 5px;
+  padding: 0px;
+  padding-bottom: 20px;
+}
+
+
+ /* ANIMATIONS */
+  
+  /* Simple Animation de CSS3 Fade-in-down  */
+  .fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  
+  @-webkit-keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+  
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+#myDiv {
+  display: none;
+  background-color: #00ff40;
+  padding: 20px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: green;
+}
+
+/* head */
+.head {
+  height: 100px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  float: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.game {
+  box-shadow: 0px 0px 3px rgba(0,0,0,0.5);
+}
+
+div.description {
+  height: 250px;
+  width: 300px;
+  top: 1000px;
+  color: #333;
+  font-family: nunito;
+  transform: translate(-50%, -50%) scale(0);
+  position: absolute;
+  left: 50%;
+  top: 425px;
+  background: #fff;
+  padding: 50px;
+  border-radius: 0px;
+  z-index: 1000;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  font-size: 15px;
+  transition: 0.3s all;
+}
+
+.description.show {
+  visibility: visible;
+  opacity: 1;
+  font-size: 15px;
+  transform: translate(-50%, -50%) scale(1);
+  transition: 0.3s all;
+}
+
+.info {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-weight: 100;
+  cursor: pointer;
+  border: 0px;
+  border-color: #aaa;
+  background-color: #88b1ef;
+  color: #fff;
+  font-size: 20px;
+  top: 50px;
+  transform: translate(-50%, -50%);
+  margin-left: 25px;
+  transition: 0.1s background-color;
+}
+
+.info:hover {
+  background-color: #6593d8;
+}
+
+
+.repeat {
+  margin: 0px !important;
+}
+
+.a {
+  font-family: Nunito;
+  font-size: 100px;
+  font-weight: 200;
+  margin-right: 15px
+  
+}
+
+.score {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  top: 10px;
+  font-family: nunito;
+  font-weight: 400;
+  font-size: 30px;
+  color: grey;
+  text-align: center;
+}
+
+
+
+/* field */
+.field, .grid {
+  position: absolute;
+  width: 510px;
+  height: 510px;
+  background-color: #888;
+  top: 150px;
+  border-radius: 0px;
+  border:5px solid #888;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  
+}
+.wrapper2 {
+  margin-left: 30px;
+   height: 700px;
+   width: 400px;
+   background: #fff;
+   
+   border-radius: 5px;
+   padding: 0px;
+ }
+
+
+
+.fadeIn.first {
+  -webkit-animation-delay: 0.4s;
+  -moz-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.field {
+  z-index: 50;
+}
+
+.grid {
+  z-index: 100;
+}
+
+.row, .grid_row {
+  width: 510px;
+  height: 135px;
+  position: relative;
+  display: table-row;
+}
+
+.cell, .grid_cell {
+  background-color: white;
+  width: 125px;
+  height: 125px;
+  position: relative;
+  display: table-cell;
+  border-radius: 0px;
+  border: 5px solid #888;
+  text-align: center;
+  vertical-align: middle;
+  font-family: nunito;
+  font-size: 50px;
+}
+
+.grid_cell {
+  background-color: #aaa;
+  color: white;
+  
+}
+
+div > div > div > div {
+  opacity: 1;
+  position: absolute;
+}
+
+.tile {
+  opacity: 1;
+  width: 118px;
+  height: 126px;
+  background-color: white;
+  z-index: 150;
+  border-radius: 0px;
+  font-weight: 200;
+  top: 0;
+  left: -1px;
+  color: black;
+  transition: 0.3s all;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+}
+
+#status {
+  width: 100%;
+  height: 100vh;
+}
+
+.won {
+  background-color: #337538;
+  transition: 0.3s all;
+  
+}
+
+
+
+input[type=button], input[type=submit], input[type=reset]  {
+  background-color: #ed9256;
+  border: none;
+  color: white;
+  padding: 15px 80px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 13px;
+  -webkit-box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+  box-shadow: 0 10px 30px 0 rgba(95,186,233,0.4);
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  margin: 5px 20px 40px 20px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+input[type=submit] {
+  margin-top: 20px;
+}
+
+input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover  {
+  background-color: #fff;
+  color: #ed9256;
+}
+
+input[type=button]:active, input[type=submit]:active, input[type=reset]:active  {
+  -moz-transform: scale(0.95);
+  -webkit-transform: scale(0.95);
+  -o-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
+}

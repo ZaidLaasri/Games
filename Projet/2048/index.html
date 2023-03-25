@@ -1,0 +1,95 @@
+<head>
+  <link href="style.css" rel="stylesheet">
+  <script src=script.js></script>
+</head>
+
+
+<body>
+  <div class="game">
+
+    <table>
+      <tr>
+        <td>
+          <div class="wrapper fadeInDown" id="field">
+            <div class="score" style="left: 20px;  position: fixed;">Score<br /><span id="value"></span></div>
+            <div id="compteur" style="right: 20px; float:right; top:20px; position: fixed;"></div>
+
+          </div>
+        </td>
+        <td>
+          <div class="wrapper2 fadeInDown" id="wrapper2">
+            <div id="formContent">
+              <div class="fadeIn first">
+
+                <div class="a">2048 <button class="info" onClick='info()'>i</button>
+
+
+
+                </div>
+                <br>
+                <br>
+
+                <div class="" style="margin-top: 100px;">
+
+
+                  <p>
+                    <button style="padding:0; border:0; margin-left:5px; margin-top:25px" id="param" onClick='param()'>
+                      <input style="margin: 0;" type="submit" class="fadeIn" value="Paramètres" /></button>
+                  </p>
+                  <p>
+                    <a href="/2048/recrod2048.html"> <button
+                        style="padding:0; border:0; margin-left:5px; margin-top:25px">
+                        <input style="margin: 0;" type="submit" class="fadeIn" value="Records" /></button></a>
+                  </p>
+
+
+                  <p>
+                    <a href="/acceuil/acceuil.html"><input type="submit" class="fadeIn" value="Quitter" /></a>
+                  </p>
+
+
+                </div>
+
+
+
+              </div>
+              <div class="description" id="description">
+                Comment jouer :<br /><br />
+                Utilisez les touches fléchées pour faire glisser les tuiles. <br />
+                Deux tuiles ayant la même valeur en ligne peuvent être fusionnées. Le but est de fusionner les tuiles et
+                d'obtenir le nombre 2048 tuiles.<br /><br />
+                Le score est la somme des tuiles fusionnées.<br><br />
+                <span>_______________________________</span><br /><br />
+
+              </div>
+
+              <div class="description" id="niveau">
+                <p> <button style="padding:0; border:0; margin-left:5px" id="difficile" onClick='reset()'> <input
+                      style="margin: 0;" type="submit" class="fadeIn" value="Difficile (5 min)" /></button>
+                </p>
+                <p>
+                  <button style="padding:0; border:0; margin-left:5px; margin-top:25px" id="intermediaire"
+                    onClick='reset()'> <input style="margin: 0;" type="submit" class="fadeIn"
+                      value="Intermédiaire (10 min)" /></button>
+                </p>
+
+                <p>
+                  <button style="padding:0; border:0; margin-left:5px; margin-top:25px" id="facile" onClick='reset()'>
+                    <input style="margin: 0;" type="submit" class="fadeIn" value="Facile (15 min)" /></button>
+                </p>
+
+
+              </div>
+
+
+              
+            </div>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div class='' id='status'>
+  </div>
+</body>
