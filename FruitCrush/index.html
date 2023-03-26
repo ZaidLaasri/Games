@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Fruit Crush</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="/FruitCrush/js/app.js" charset="utf-8"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td>
+    <div class="wrapper fadeInDown">
+      <div id="formContent">
+        <div style="display: none;" id="score">Score :</div>
+        
+        <div class="grid" id="FruitGrid" style="margin-right: 50px;" >
+         
+        </div>
+        <canvas style="display: inline; margin-top:-600px; background-color:white" id="FruitCanvas" width="700" height="600"></canvas>
+        <div id="chrono" style="float: right; display: none;">00:00:00</div>
+
+        <div id="myForm" style="display: none">
+          <form id="myFormLevel">
+            <label for="niveau">Choisissez Votre niveau :</label>
+
+            <select name="pets" id="niveau">
+              <option value="150" selected>Facile</option>
+              <option value="100" >Moyen</option>
+              <option value="50">Difficile</option>
+            </select>
+          </form>
+        </div>
+      </div>
+    </div>
+  </td>
+  <td>
+    <div class="wrapper2 fadeInDown" id="wrapper2">
+      <div id="formContent">
+       
+        <h2 class="active"><a href="#">Menu </a></h2>
+
+       
+        <div class="fadeIn first">
+          <input
+            type="submit"
+            id="myButton"
+            class="fadeIn"
+            value="Paramètres"
+          />
+          <a href="regleFruitCrush.html"
+            ><input type="submit" class="fadeIn" value="Règles du jeu"
+          /></a>
+          
+            <input type="submit" class="fadeIn" value="Records" id="myButtonRecord"
+          />
+          <a href="/acceuil/acceuil.html"
+            ><input type="submit" class="fadeIn" value="Quitter"
+          /></a>
+          <input
+            style="display: none"
+            type="submit"
+            id="myButtonReprendre"
+            class="fadeIn"
+            value="Rejouer"
+          />
+        </div>
+
+      </div>
+    </div>
+  </td>
+  </tr>
+  </table>
+  </body>
+</html>

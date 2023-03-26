@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Snake Game</title>
+  <link href="https://fonts.googleapis.com/css?family=Antic+Slab" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script type="module" src="/Snake/Js/script.js"></script>
+</head>
+
+<body>
+
+  <div class="wrapper fadeInDown">
+    <div id="formContent">
+
+      <div id="score">Score :</div>
+      <div id="chrono" style="float: right">00:00:00</div>
+      <canvas id="snakeCanvas" width="600" height="600"></canvas>
+
+      <div id="myForm" style="display: none">
+        <form id="myFormLevel">
+          <label for="niveau">Choisissez Votre niveau :</label>
+
+          <select name="pets" id="niveau">
+            <option value="150">Facile</option>
+            <option value="100" selected>Moyen</option>
+            <option value="50">Difficile</option>
+          </select>
+        </form>
+        <form>
+          <label for="couleur">Choisissez la couleur de votre Snake :</label>
+
+          <select name="pets" id="couleur">
+            <option value="#338DFF">Bleu</option>
+            <option value="#3FFF33" selected>Vert</option>
+            <option value="#F933FF">Rose</option>
+          </select>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="wrapper2 fadeInDown" id="wrapper2">
+    <div id="formContent">
+      <!-- Menu -->
+      <h2 class="active"><a href="#">Menu </a></h2>
+
+     
+      <div class="fadeIn first">
+        <input type="submit" id="myButton" class="fadeIn" value="Paramètres" />
+        <a href="reglageSnake.html"><input type="submit" class="fadeIn" value="Règles du jeu" /></a>
+        <a href="recrodSnake.html"><input type="submit" class="fadeIn" value="Records" /></a>
+        <a href="/acceuil/acceuil.html"><input type="submit" class="fadeIn" value="Quitter" /></a>
+        <input style="display: none" type="submit" id="myButtonReprendre" class="fadeIn" value="Rejouer" />
+      </div>
+
+      
+    </div>
+  </div>
+</body>
+
+</html>
